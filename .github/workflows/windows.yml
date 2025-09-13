@@ -76,7 +76,7 @@ jobs:
       - name: Uploading release
         id: uploading_release
         if: ${{ steps.packaging_vs_placebo.outcome == 'success' }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: vs-placebo
           path: release
